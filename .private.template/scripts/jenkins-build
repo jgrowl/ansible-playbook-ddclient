@@ -1,0 +1,7 @@
+cd /etc/ansible/playbooks/ansible-playbook-ddclient
+sudo -u jenkins /etc/ansible/playbooks/ansible-playbook-ddclient/.private/scripts/add-github-remote
+sudo -u jenkins git add .
+sudo -u jenkins git pull --no-edit github master
+sudo -u jenkins git commit -m 'Updated submodules'
+sudo -u jenkins git push origin master
+ansible-playbook -i /etc/ansible/playbooks/ansible-playbook-ddclient/.private/hosts /etc/ansible/playbooks/ansible-playbook-ddclient/main.yml
