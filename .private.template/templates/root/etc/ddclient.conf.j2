@@ -2,12 +2,7 @@
 #
 # /etc/ddclient.conf
 syslog=yes
-protocol=namecheap
-use=fw
-fw=http://192.168.1.1/Status_Router.asp
-fw-login=admin
-fw-password=MY_ROUTER_PASSWORD
-server=dynamicdns.park-your-domain.com
-login=mydomain.com
-password='MY_PASSWORD'
-home
+protocol={{ddclient_protocol}}
+server={{ddclient_server}}
+login={{ddclient_login}}
+password={{ddclient_password}}
