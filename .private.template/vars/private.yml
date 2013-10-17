@@ -1,1 +1,4 @@
-
+ddclient_protocol: namecheap
+ddclient_server: dynamicdns.park-your-domain.com
+ddclient_login: mydomain.com
+ddclient_password: MY_PASSWORD
