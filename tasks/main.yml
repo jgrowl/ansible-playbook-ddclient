@@ -6,6 +6,8 @@
 
 - name: ddclient | Set ddclient config 
   template: src=root/etc/ddclient.conf.j2 dest=/etc/ddclient.conf
+  notify: 
+    - restart ddclient
 
 - name: ddclient | Start ddclient
   service: name=ddclient state=started

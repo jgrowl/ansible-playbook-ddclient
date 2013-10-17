@@ -1,4 +1,4 @@
 ---
-#- name: restart ntp
-#  service: name=ntpd state=restarted
+- name: restart ddclient 
+  service: name=ddclient state=restarted
 
