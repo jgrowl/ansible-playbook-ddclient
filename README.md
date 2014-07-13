@@ -1,3 +1,5 @@
+DEPRECATED! INSTEAD USE GALAXY ROLE: https://github.com/jgrowl/ddclient
+
 ansible-playbook-ddclient
 =========================
 
